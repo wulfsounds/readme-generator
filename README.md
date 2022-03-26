@@ -4,7 +4,7 @@
 
 ## Description
 
-The README Generator is a simple tool that allows the user to create a professional README file using Node.
+The README Generator is a simple tool that allows the user to create a professional README file. This application is created, maintained, and operational using Node.js. It's purpose is for educational purposes with intent on building a portfolio for the professional world. 
 
 ## Table of Contents
 
@@ -17,11 +17,19 @@ The README Generator is a simple tool that allows the user to create a professio
 
 ## Installation
 
-To get started, fork this repo into a text editor, then install the node package in the command line.
+To get started, fork this repo into a text editor, then install the node package into your repo using in the command line.
 
 ```bash
 npm install
 ```
+
+Once completed, open the JavaScript file titled `index.js` in the command line by right-clilcking and selecting '*Open in Integrated Terminal*' and enter the following:
+
+```bash
+node index.js
+```
+
+And that's it! Just follow the prompt in the command line by inputing the information to your project and the README file will generate in the folder you assigned the node package to. And don't worry if you don't have all the information, once comepleted, you can go back into the newly generated README file and add more information. Happy Coding!
 
 ## Usage
 
@@ -29,7 +37,7 @@ npm install
 
 ## Testing
 
-{Testing infromation goes here}
+Node testing coming soon. Once the understanding of testing a Node.js application is learned, this application will be updated with that information. This application is overseen by SMU Coding Bootcamps and will be graded as a homework project.
 
 ## License
 
@@ -58,4 +66,6 @@ SOFTWARE.
 
 ## Questions
 
-For questions, contact me via <a href="mailto:devinlwulf@gmail.com">email</a> or <a href="https://github.com/wulfsounds">Github</a>.
+For questions, contact me via <a href="mailto: devinlwulf@gmail.com">email</a>.
+
+Find me on <a href="https://github.com/wulfsounds">Github</a>.
