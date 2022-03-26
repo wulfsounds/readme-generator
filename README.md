@@ -33,6 +33,8 @@ And that's it! Just follow the prompt in the command line by inputing the inform
 
 ## Usage
 
+Recorded using Screencastify on Chrome..
+
 https://drive.google.com/file/d/1ddG0Nhx2glilNrmsoDWdnXOL3gjVb5KY/view
 
 ## Testing
