@@ -59,5 +59,3 @@ SOFTWARE.
 ## Questions
 
 For questions, contact me via <a href="mailto:devinlwulf@gmail.com">email</a> or <a href="https://github.com/wulfsounds">Github</a>.
-
-<!-- https://github.com/(profile) -->

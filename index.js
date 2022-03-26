@@ -1,26 +1,12 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
+// const util = require('util')
 const fs = require('fs');
+const generateReadme = require('./utils/generateMarkdown')
+// const createFile = util.promisify(fs.writeFile)
 
-// TODO: Create a function to initialize app
+
 function init() {
-// TODO: Create an array of questions for user input
-  
-    // .then((response) => {
-    //   console.log(response);
-    //   const finalReadme = generateReadme(response)
-  
-    //       fs.writeFile("README.md", finalReadme, function (err) {
-    //           if (err) console.error(err);
-    //       });
-    //       console.log('success');
-    // })
-}
-
-// Function call to initialize app
-init();
-
-function userInput() {
   inquirer
     .prompt([
       {
@@ -40,7 +26,7 @@ function userInput() {
       },
       {
         type: 'input',
-        message: 'Provide a screenshot or video of the project.',
+        message: 'Provide a link to a screenshot or video of the project.',
         name: 'usage',
       },
       {
@@ -93,4 +79,26 @@ function userInput() {
         name: 'github',
       },
     ])
+    .then((response) => {
+      console.log(`You have entered: ${response}`);
+      const finalReadme = generateReadme(response)
+
+      fs.writeFile("README.md", finalReadme, function (err) {
+          if (err) console.error(err);
+      });
+      console.log('README successfully created.');
+  });
 }
+
+// TODO: Create a function to initialize app
+// async function init() {
+//   try {
+//     const response = await userInput();
+//     console.log(response);
+//     await createFile('README.md', generateReadme(response));
+//   } catch(err) {
+//     console.error(err);
+//   }
+// }
+  // Function call to initialize app
+init();
