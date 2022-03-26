@@ -1,5 +1,6 @@
 // TODO: Include packages needed for this application
 const fs = require('fs');
+// const util = require('util')
 const inquirer = require('inquirer');
 const generateReadme = require('./utils/generateMarkdown')
 
@@ -78,7 +79,7 @@ function init() {
       },
     ])
     .then((response) => {
-      console.log(`You have entered: ${response}`);
+      console.log(response);
       const finalReadme = generateReadme(response)
 
       fs.writeFile("README.md", finalReadme, function (err) {
