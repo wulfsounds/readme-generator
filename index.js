@@ -3,6 +3,22 @@ const fs = require('fs');
 // const util = require('util')
 const inquirer = require('inquirer');
 const generateReadme = require('./utils/generateMarkdown')
+const figlet = require('figlet');
+
+
+function intro() {
+    //ASCII Art Header
+    figlet('README Generator!', function(err, data) {
+      if(err) {
+        console.log(`He's dead Jim...`);
+        console.dir(err);
+        return;
+      }
+      console.log(data)
+      init();
+    });
+
+} 
 
 // TODO: Create a function to initialize app
 function init() {
@@ -89,4 +105,4 @@ function init() {
   });
 }
   // Function call to initialize app
-init();
+intro();
